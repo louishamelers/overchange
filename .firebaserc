@@ -1,6 +1,5 @@
 {
   "projects": {
-    "default": "overcharge-e8560",
-    "prod": "overcharge-a95da"
+    "default": "suspicious-albatross"
   }
 }
