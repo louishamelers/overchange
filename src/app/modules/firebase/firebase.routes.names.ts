@@ -1,4 +1,4 @@
 export const firebaseNames = {
-    ROOT: 'firebase',
+    ROOT: '',
     FIRESTORE: 'firestore'
 }
