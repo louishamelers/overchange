@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { environment } from 'src/environments/environment';
 import { AppComponent } from './app.component';
 import { ROUTES } from './app.routes';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ROUTES } from './app.routes';
       scrollPositionRestoration: 'enabled',
       enableTracing: false
     }),
+    CoreModule
   ],
   providers: [
     {
