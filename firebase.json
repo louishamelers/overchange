@@ -1,4 +1,18 @@
 {
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "emulators": {
+    "database": {
+      "port": 9000
+    },
+    "hosting": {
+      "port": 5000
+    },
+    "ui": {
+      "enabled": true
+    }
+  },
   "hosting": {
     "public": "dist/overchange",
     "ignore": [
