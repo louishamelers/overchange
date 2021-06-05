@@ -7,16 +7,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Run a local development server with the default development environment.
 
 ### Development server
+Run `ng serve` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files. Use the ` -c production` flag to use the environment variables.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files. This configuration points to the development environment of the overchange firebase service: `overcharge-e8560`
-
-    ng serve
-
-### Production server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files. This configuration points to the production environment of the overchange firebase service: `overcharge-a95da`
-
-    ng serve -c production
+#### Firebase emulators
+The development environment for this project is set up to connect to a local session of the firebase emulators. To initialize the local emulator, make sure you have installed the firebase CLI and configured the Firebase Local Emulator Suite: [Firebase suite docs](https://firebase.google.com/docs/rules/emulator-setup). Start the emulators with `firebase emulator:start`.
 
 ## Build
 
