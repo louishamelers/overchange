@@ -5,21 +5,6 @@ import { AngularFirestore } from "@angular/fire/firestore";
   selector: 'app-root',
   template: '<router-outlet></router-outlet>'
 })
-export class AppComponent implements OnInit{
+export class AppComponent {
   title = 'overchange';
-
-  constructor(private firestore: AngularFirestore) {}
-
-  ngOnInit(): void {
-    this.firestore
-      .collection("testCollection")
-      .get()
-      .subscribe((ss) => {
-        console.log(ss);
-        ss.docs.forEach((doc) => {
-          console.log(doc.data());
-        });
-      });
-  }
-
 }
