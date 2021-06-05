@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { AngularFireModule } from '@angular/fire';
 import { SETTINGS } from '@angular/fire/firestore';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 import { environment } from 'src/environments/environment';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ROUTES } from './app.routes';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,10 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AppRoutingModule
+    RouterModule.forRoot(ROUTES, {
+      scrollPositionRestoration: 'enabled',
+      enableTracing: false
+    }),
   ],
   providers: [
     {
