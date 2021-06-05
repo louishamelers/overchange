@@ -3,14 +3,12 @@ import { AngularFirestore } from "@angular/fire/firestore";
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: '<router-outlet></router-outlet>'
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit{
   title = 'overchange';
 
-  constructor(private firestore: AngularFirestore) {
-  }
+  constructor(private firestore: AngularFirestore) {}
 
   ngOnInit(): void {
     this.firestore
