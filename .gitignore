@@ -46,5 +46,4 @@ testem.log
 Thumbs.db
 
 # Firebase logs
-/database-debug.log
-/ui-debug.log
+/*.log
