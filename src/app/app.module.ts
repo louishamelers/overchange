@@ -7,6 +7,7 @@ import { environment } from 'src/environments/environment';
 import { AppComponent } from './app.component';
 import { ROUTES } from './app.routes';
 import { CoreModule } from './core/core.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CoreModule } from './core/core.module';
       scrollPositionRestoration: 'enabled',
       enableTracing: false
     }),
-    CoreModule
+    CoreModule,
+    BrowserAnimationsModule
   ],
   providers: [
     {
