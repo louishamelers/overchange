@@ -10,7 +10,7 @@ Run a local development server with the default development environment.
 Run `ng serve` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files. Use the ` -c production` flag to use the environment variables.
 
 #### Firebase emulators
-The development environment for this project is set up to connect to a local session of the firebase emulators. To initialize the local emulator, make sure you have installed the firebase CLI and configured the Firebase Local Emulator Suite: [Firebase suite docs](https://firebase.google.com/docs/rules/emulator-setup). Start the emulators with `firebase emulator:start`.
+The development environment for this project is set up to connect to a local session of the firebase emulators. To initialize the local emulator, make sure you have installed the firebase CLI and configured the Firebase Local Emulator Suite: [Firebase suite docs](https://firebase.google.com/docs/rules/emulator-setup). Start the emulators with `firebase emulators:start`.
 
 #### Running unit tests
 
