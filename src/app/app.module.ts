@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { ROUTES } from './app.routes';
 import { CoreModule } from './core/core.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
+    SharedModule,
     RouterModule.forRoot(ROUTES, {
       scrollPositionRestoration: 'enabled',
       enableTracing: false
